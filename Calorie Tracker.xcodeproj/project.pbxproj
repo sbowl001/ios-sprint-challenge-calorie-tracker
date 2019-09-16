@@ -17,6 +17,7 @@
 		A3C7CE3D232F366A00A59451 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C7CE3C232F366A00A59451 /* CoreDataStack.swift */; };
 		A3C7CE3F232F367B00A59451 /* Calorie+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C7CE3E232F367B00A59451 /* Calorie+Convenience.swift */; };
 		A3C7CE43232F3DFC00A59451 /* CalorieTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C7CE42232F3DFC00A59451 /* CalorieTrackerViewController.swift */; };
+		A3C7CE45232F5C2000A59451 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C7CE44232F5C2000A59451 /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A3C7CE3C232F366A00A59451 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		A3C7CE3E232F367B00A59451 /* Calorie+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calorie+Convenience.swift"; sourceTree = "<group>"; };
 		A3C7CE42232F3DFC00A59451 /* CalorieTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieTrackerViewController.swift; sourceTree = "<group>"; };
+		A3C7CE44232F5C2000A59451 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		BA94C1261EC23A0C6C32B351 /* Pods-Calorie Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calorie Tracker.release.xcconfig"; path = "Target Support Files/Pods-Calorie Tracker/Pods-Calorie Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		EE416416A44F7D070CC0E5C5 /* Pods-Calorie Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calorie Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Calorie Tracker/Pods-Calorie Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 				A3C7CE2D232F2DF600A59451 /* LaunchScreen.storyboard */,
 				A3C7CE30232F2DF600A59451 /* Info.plist */,
 				A3C7CE42232F3DFC00A59451 /* CalorieTrackerViewController.swift */,
+				A3C7CE44232F5C2000A59451 /* Notification.swift */,
 			);
 			path = "Calorie Tracker";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				A3C7CE3D232F366A00A59451 /* CoreDataStack.swift in Sources */,
 				A3C7CE43232F3DFC00A59451 /* CalorieTrackerViewController.swift in Sources */,
 				A3C7CE3F232F367B00A59451 /* Calorie+Convenience.swift in Sources */,
+				A3C7CE45232F5C2000A59451 /* Notification.swift in Sources */,
 				A3C7CE2A232F2DF500A59451 /* Calorie_Tracker.xcdatamodeld in Sources */,
 				A3C7CE3B232F365C00A59451 /* CalorieController.swift in Sources */,
 				A3C7CE22232F2DF500A59451 /* AppDelegate.swift in Sources */,

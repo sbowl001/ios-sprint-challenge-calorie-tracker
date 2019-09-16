@@ -29,36 +29,78 @@ class CalorieTrackerViewController: UIViewController, UITableViewDataSource, UIT
      
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        renderChart()
         tableView.delegate = self
         tableView.dataSource = self
         
-        let data = [
-            (x: 0, y: 0),
-            (x: 3, y: 2.5),
-            (x: 4, y: 2),
-            (x: 5, y: 2.3),
-            (x: 7, y: 3),
-            (x: 8, y: 2.2),
-            (x: 9, y: 2.5)
-        ]
-        let series = ChartSeries(data: data)
-        series.area = true
         
-        chartView.yLabels = [0, 200, 600, 1000]
-        
-//        chartView.xLabelsFormatter = { String(Int(round($1))) + "h" }
-
-        chartView.add(series)
-        // Do any additional setup after loading the view.
+        addCaloriesToAll()
+//        let data = [
+//            (x: 0, y: 0),
+//            (x: 3, y: 2.5),
+//            (x: 4, y: 2),
+//            (x: 5, y: 2.3),
+//            (x: 7, y: 3),
+//            (x: 8, y: 2.2),
+//            (x: 9, y: 2.5)
+//        ]
+//        let series = ChartSeries(data: data)
+//        series.area = true
+//
+//        chartView.yLabels = [0, 200, 600, 1000]
+//
+//
+//
+//        chartView.add(series)
+  
     }
   
-//    let series = ChartSeries([0, 6.5, 2, 8, 4.1, 7, -3.1, 10, 8])
+ 
 
     
    
     @IBAction func addButtonPressed(_ sender: Any) {
         alertCalorieEntry()
+    }
+    
+    func renderChart() {
+        var data : [(x: Double, y: Double)] = []
+        var index = Double(0)
+        for calorie in fetchedResultsController.fetchedObjects! {
+            data.append((x: index, y: Double(calorie.calories)))
+            index += Double(1)
+        }
+        let series = ChartSeries(data: data)
+        series.area = true
+        chartView.gridColor = .gray
+        chartView.add(series)
+        series.color = ChartColors.cyanColor()
+        chartView.highlightLineColor = .red
+    }
+    @objc func refreshViews(notification: Notification) {
+        //        let data = [
+        //            (x: 0, y: 0),
+        //            (x: 3, y: 2.5),
+        //            (x: 4, y: 2),
+        //            (x: 5, y: 2.3),
+        //            (x: 7, y: 3),
+        //            (x: 8, y: 2.2),
+        //            (x: 9, y: 2.5)
+        //        ]
+        //        let series = ChartSeries(data: data)
+        //        series.area = true
+        //
+        //        chartView.yLabels = [0, 200, 600, 1000]
+        //
+        //
+        //
+        //        chartView.add(series)
+        
+       renderChart()
+       tableView.reloadData()
+    }
+    func addCaloriesToAll() {
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshViews(notification:)), name: .caloriesAdded, object: nil)
     }
     
     func alertCalorieEntry() {
@@ -74,9 +116,9 @@ class CalorieTrackerViewController: UIViewController, UITableViewDataSource, UIT
             guard let amount =  calorieTextField.text, !amount.isEmpty else {return}
             
             self.calorieController.addCalories(with: amount)
-            self.tableView.reloadData() 
             
-            //post a notification here
+            
+            NotificationCenter.default.post(name: .caloriesAdded, object: self)
         }))
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
