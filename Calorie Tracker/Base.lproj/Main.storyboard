@@ -18,7 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
-                            <userLayoutGuide location="243" affinity="minY"/>
+                            <userLayoutGuide location="237" affinity="minY"/>
+                            <userLayoutGuide location="249" affinity="minY"/>
+                            <userLayoutGuide location="197" affinity="minX"/>
                         </userGuides>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQV-ty-nEC" customClass="Chart" customModule="SwiftChart">
@@ -72,7 +74,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Ae-An-R4U"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rgJ-4X-hm5"/>
+                    <navigationItem key="navigationItem" id="rgJ-4X-hm5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NRC-qt-ZHK"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addItem" destination="NRC-qt-ZHK" id="MnG-XT-Wko"/>
+                        <outlet property="chartView" destination="XQV-ty-nEC" id="Sf1-9d-gE7"/>
+                        <outlet property="tableView" destination="8vv-mf-sGH" id="jrn-zX-4po"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSc-N3-HKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
