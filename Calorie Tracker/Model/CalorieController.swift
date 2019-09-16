@@ -12,24 +12,26 @@ import CoreData
 
 class CalorieController {
     
-    var calories: [Calorie]  {
-        let fetchRequest: NSFetchRequest<Calorie> =
-        Calorie.fetchRequest()
-        let moc = CoreDataStack.shared.mainContext
-        
-        do {
-            return try moc.fetch(fetchRequest)
-        } catch {
-            NSLog("error fetching calorie")
-            return []
-        }
-    }
+    var calories: [Calorie] = []
+//    {
+//        let fetchRequest: NSFetchRequest<Calorie> =
+//        Calorie.fetchRequest()
+//        let moc = CoreDataStack.shared.mainContext
+//
+//        do {
+//            return try moc.fetch(fetchRequest)
+//        } catch {
+//            NSLog("error fetching calorie")
+//            return []
+//        }
+//    }
     
-    func addCalories(with calories: String){
-        guard let amount = Int32(calories) else {return}
+    func addCalories(with amount: String){
+        guard let amount = Int32(amount) else {return}
        //changing to int for coredata
-//        let calorie = Calorie(calories: amount)
-        Calorie(calories: amount)
+        let calorie = Calorie(calories: amount)
+//        Calorie(calories: amount)
+        calories.append(calorie)
 //        calories.append(calorie)
         
         do {

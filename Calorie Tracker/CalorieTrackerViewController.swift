@@ -8,14 +8,21 @@
 
 import UIKit
 import SwiftChart
-
+import CoreData
 class CalorieTrackerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
   
     
      let calorieController = CalorieController()
-    
-    
+    lazy var fetchedResultsController:
+        NSFetchedResultsController<Calorie> = {
+            let fetchRequest: NSFetchRequest<Calorie> = Calorie.fetchRequest()
+            fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
+            let frc = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: CoreDataStack.shared.mainContext, sectionNameKeyPath: nil, cacheName: nil)
+            frc.delegate = self
+            try? frc.performFetch()
+            return frc
+    }()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var chartView: Chart!
     
@@ -78,13 +85,15 @@ class CalorieTrackerViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return calorieController.calories.count
+//        return calorieController.calories.count
+        return fetchedResultsController.fetchedObjects?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CalorieAmount", for: indexPath)
         
-        let tracker = calorieController.calories[indexPath.row]
+//        let tracker = calorieController.calories[indexPath.row]
+        let tracker = fetchedResultsController.object(at: indexPath)
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
@@ -107,4 +116,53 @@ class CalorieTrackerViewController: UIViewController, UITableViewDataSource, UIT
     }
     */
 
+}
+
+extension CalorieTrackerViewController: NSFetchedResultsControllerDelegate {
+  
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.beginUpdates()
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+    
+        switch type {
+            
+        case .insert:
+            guard let newIndexPath = newIndexPath else { return }
+           
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        case .delete:
+            guard let indexPath = indexPath else { return }
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        case .move:
+            
+            guard let indexPath = indexPath, let newIndexPath = newIndexPath else { return }
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        case .update:
+            guard let indexPath = indexPath else { return }
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+        default:
+            break
+        }
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
+        
+        switch type {
+        case .insert:
+            let indexSet = IndexSet(integer: sectionIndex)
+            tableView.insertSections(indexSet, with: .automatic)
+        case .delete:
+            let indexSet = IndexSet(integer: sectionIndex)
+            tableView.deleteSections(indexSet, with: .automatic)
+        default:
+            break
+        }
+    }
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.endUpdates()
+    }
 }
