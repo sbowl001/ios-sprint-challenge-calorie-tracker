@@ -87,6 +87,7 @@ class CalorieTrackerViewController: UIViewController, UITableViewDataSource, UIT
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return calorieController.calories.count
         return fetchedResultsController.fetchedObjects?.count ?? 0
+//        return fetchedResultsController.sections?[section].numberOfObjects ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
