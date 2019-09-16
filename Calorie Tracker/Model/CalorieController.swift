@@ -25,8 +25,8 @@ class CalorieController {
         }
     }
     
-    func addCalories(with amount: String){
-        guard let amount = Int32(amount) else {return}
+    func addCalories(with calories: String){
+        guard let amount = Int32(calories) else {return}
        //changing to int for coredata
 //        let calorie = Calorie(calories: amount)
         Calorie(calories: amount)

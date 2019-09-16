@@ -75,10 +75,13 @@
                         <viewLayoutGuide key="safeArea" id="9Ae-An-R4U"/>
                     </view>
                     <navigationItem key="navigationItem" id="rgJ-4X-hm5">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NRC-qt-ZHK"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NRC-qt-ZHK">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="B5g-HK-g61" id="oWu-Tg-o8C"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addItem" destination="NRC-qt-ZHK" id="MnG-XT-Wko"/>
                         <outlet property="chartView" destination="XQV-ty-nEC" id="Sf1-9d-gE7"/>
                         <outlet property="tableView" destination="8vv-mf-sGH" id="jrn-zX-4po"/>
                     </connections>
