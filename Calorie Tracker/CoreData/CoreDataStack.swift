@@ -14,7 +14,7 @@ class CoreDataStack {
     static let shared = CoreDataStack()
     
     lazy var container: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "CalorieTracker")
+        let container = NSPersistentContainer(name: "Calorie_Tracker")
         container.loadPersistentStores { (_, error) in
             if let error = error as NSError? {
                 fatalError("Failed to load from persistent store: \(error)")
