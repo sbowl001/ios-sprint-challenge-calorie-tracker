@@ -7,87 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A3C7CE01232F220E00A59451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C7CE00232F220E00A59451 /* AppDelegate.swift */; };
-		A3C7CE03232F220E00A59451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C7CE02232F220E00A59451 /* ViewController.swift */; };
-		A3C7CE06232F220E00A59451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C7CE04232F220E00A59451 /* Main.storyboard */; };
-		A3C7CE09232F220E00A59451 /* Calorie_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3C7CE07232F220E00A59451 /* Calorie_Tracker.xcdatamodeld */; };
-		A3C7CE0B232F221000A59451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C7CE0A232F221000A59451 /* Assets.xcassets */; };
-		A3C7CE0E232F221000A59451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C7CE0C232F221000A59451 /* LaunchScreen.storyboard */; };
-		C21DE6AA78731B0E83DD236D /* Pods_Calorie_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E54BDA55D27305B1281438 /* Pods_Calorie_Tracker.framework */; };
+		A3C7CE22232F2DF500A59451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C7CE21232F2DF500A59451 /* AppDelegate.swift */; };
+		A3C7CE24232F2DF500A59451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C7CE23232F2DF500A59451 /* ViewController.swift */; };
+		A3C7CE27232F2DF500A59451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C7CE25232F2DF500A59451 /* Main.storyboard */; };
+		A3C7CE2A232F2DF500A59451 /* Calorie_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3C7CE28232F2DF500A59451 /* Calorie_Tracker.xcdatamodeld */; };
+		A3C7CE2C232F2DF600A59451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C7CE2B232F2DF600A59451 /* Assets.xcassets */; };
+		A3C7CE2F232F2DF600A59451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C7CE2D232F2DF600A59451 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4DB3CE0609873DE27E3F2281 /* Pods-Calorie Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calorie Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Calorie Tracker/Pods-Calorie Tracker.debug.xcconfig"; sourceTree = "<group>"; };
-		A3C7CDFD232F220E00A59451 /* Calorie Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calorie Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3C7CE00232F220E00A59451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3C7CE02232F220E00A59451 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A3C7CE05232F220E00A59451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A3C7CE08232F220E00A59451 /* Calorie_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Calorie_Tracker.xcdatamodel; sourceTree = "<group>"; };
-		A3C7CE0A232F221000A59451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A3C7CE0D232F221000A59451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A3C7CE0F232F221000A59451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3E54BDA55D27305B1281438 /* Pods_Calorie_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calorie_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D882B610B51EFEFB792175CA /* Pods-Calorie Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calorie Tracker.release.xcconfig"; path = "Target Support Files/Pods-Calorie Tracker/Pods-Calorie Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		A3C7CE1E232F2DF500A59451 /* Calorie Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calorie Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C7CE21232F2DF500A59451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3C7CE23232F2DF500A59451 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3C7CE26232F2DF500A59451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3C7CE29232F2DF500A59451 /* Calorie_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Calorie_Tracker.xcdatamodel; sourceTree = "<group>"; };
+		A3C7CE2B232F2DF600A59451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3C7CE2E232F2DF600A59451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3C7CE30232F2DF600A59451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A3C7CDFA232F220E00A59451 /* Frameworks */ = {
+		A3C7CE1B232F2DF500A59451 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C21DE6AA78731B0E83DD236D /* Pods_Calorie_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03CB33AC81633DFED9A2F04F /* Pods */ = {
+		A3C7CE15232F2DF500A59451 = {
 			isa = PBXGroup;
 			children = (
-				4DB3CE0609873DE27E3F2281 /* Pods-Calorie Tracker.debug.xcconfig */,
-				D882B610B51EFEFB792175CA /* Pods-Calorie Tracker.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		0C2E89D5927E97C07CDD7A11 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A3E54BDA55D27305B1281438 /* Pods_Calorie_Tracker.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A3C7CDF4232F220E00A59451 = {
-			isa = PBXGroup;
-			children = (
-				A3C7CDFF232F220E00A59451 /* Calorie Tracker */,
-				A3C7CDFE232F220E00A59451 /* Products */,
-				03CB33AC81633DFED9A2F04F /* Pods */,
-				0C2E89D5927E97C07CDD7A11 /* Frameworks */,
+				A3C7CE20232F2DF500A59451 /* Calorie Tracker */,
+				A3C7CE1F232F2DF500A59451 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A3C7CDFE232F220E00A59451 /* Products */ = {
+		A3C7CE1F232F2DF500A59451 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3C7CDFD232F220E00A59451 /* Calorie Tracker.app */,
+				A3C7CE1E232F2DF500A59451 /* Calorie Tracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A3C7CDFF232F220E00A59451 /* Calorie Tracker */ = {
+		A3C7CE20232F2DF500A59451 /* Calorie Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				A3C7CE00232F220E00A59451 /* AppDelegate.swift */,
-				A3C7CE02232F220E00A59451 /* ViewController.swift */,
-				A3C7CE04232F220E00A59451 /* Main.storyboard */,
-				A3C7CE0A232F221000A59451 /* Assets.xcassets */,
-				A3C7CE0C232F221000A59451 /* LaunchScreen.storyboard */,
-				A3C7CE0F232F221000A59451 /* Info.plist */,
-				A3C7CE07232F220E00A59451 /* Calorie_Tracker.xcdatamodeld */,
+				A3C7CE21232F2DF500A59451 /* AppDelegate.swift */,
+				A3C7CE23232F2DF500A59451 /* ViewController.swift */,
+				A3C7CE25232F2DF500A59451 /* Main.storyboard */,
+				A3C7CE2B232F2DF600A59451 /* Assets.xcassets */,
+				A3C7CE2D232F2DF600A59451 /* LaunchScreen.storyboard */,
+				A3C7CE30232F2DF600A59451 /* Info.plist */,
+				A3C7CE28232F2DF500A59451 /* Calorie_Tracker.xcdatamodeld */,
 			);
 			path = "Calorie Tracker";
 			sourceTree = "<group>";
@@ -95,15 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A3C7CDFC232F220E00A59451 /* Calorie Tracker */ = {
+		A3C7CE1D232F2DF500A59451 /* Calorie Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3C7CE12232F221000A59451 /* Build configuration list for PBXNativeTarget "Calorie Tracker" */;
+			buildConfigurationList = A3C7CE33232F2DF600A59451 /* Build configuration list for PBXNativeTarget "Calorie Tracker" */;
 			buildPhases = (
-				0DC27135CBD7A8BC9588CD25 /* [CP] Check Pods Manifest.lock */,
-				A3C7CDF9232F220E00A59451 /* Sources */,
-				A3C7CDFA232F220E00A59451 /* Frameworks */,
-				A3C7CDFB232F220E00A59451 /* Resources */,
-				51FD3A0DB5E1752ABCDDBDC6 /* [CP] Embed Pods Frameworks */,
+				A3C7CE1A232F2DF500A59451 /* Sources */,
+				A3C7CE1B232F2DF500A59451 /* Frameworks */,
+				A3C7CE1C232F2DF500A59451 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -111,25 +84,25 @@
 			);
 			name = "Calorie Tracker";
 			productName = "Calorie Tracker";
-			productReference = A3C7CDFD232F220E00A59451 /* Calorie Tracker.app */;
+			productReference = A3C7CE1E232F2DF500A59451 /* Calorie Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A3C7CDF5232F220E00A59451 /* Project object */ = {
+		A3C7CE16232F2DF500A59451 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Stephanie Bowles";
 				TargetAttributes = {
-					A3C7CDFC232F220E00A59451 = {
+					A3C7CE1D232F2DF500A59451 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = A3C7CDF8232F220E00A59451 /* Build configuration list for PBXProject "Calorie Tracker" */;
+			buildConfigurationList = A3C7CE19232F2DF500A59451 /* Build configuration list for PBXProject "Calorie Tracker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,97 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = A3C7CDF4232F220E00A59451;
-			productRefGroup = A3C7CDFE232F220E00A59451 /* Products */;
+			mainGroup = A3C7CE15232F2DF500A59451;
+			productRefGroup = A3C7CE1F232F2DF500A59451 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3C7CDFC232F220E00A59451 /* Calorie Tracker */,
+				A3C7CE1D232F2DF500A59451 /* Calorie Tracker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A3C7CDFB232F220E00A59451 /* Resources */ = {
+		A3C7CE1C232F2DF500A59451 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3C7CE0E232F221000A59451 /* LaunchScreen.storyboard in Resources */,
-				A3C7CE0B232F221000A59451 /* Assets.xcassets in Resources */,
-				A3C7CE06232F220E00A59451 /* Main.storyboard in Resources */,
+				A3C7CE2F232F2DF600A59451 /* LaunchScreen.storyboard in Resources */,
+				A3C7CE2C232F2DF600A59451 /* Assets.xcassets in Resources */,
+				A3C7CE27232F2DF500A59451 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0DC27135CBD7A8BC9588CD25 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Calorie Tracker-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		51FD3A0DB5E1752ABCDDBDC6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Calorie Tracker/Pods-Calorie Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Calorie Tracker/Pods-Calorie Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calorie Tracker/Pods-Calorie Tracker-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		A3C7CDF9232F220E00A59451 /* Sources */ = {
+		A3C7CE1A232F2DF500A59451 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3C7CE03232F220E00A59451 /* ViewController.swift in Sources */,
-				A3C7CE09232F220E00A59451 /* Calorie_Tracker.xcdatamodeld in Sources */,
-				A3C7CE01232F220E00A59451 /* AppDelegate.swift in Sources */,
+				A3C7CE24232F2DF500A59451 /* ViewController.swift in Sources */,
+				A3C7CE2A232F2DF500A59451 /* Calorie_Tracker.xcdatamodeld in Sources */,
+				A3C7CE22232F2DF500A59451 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A3C7CE04232F220E00A59451 /* Main.storyboard */ = {
+		A3C7CE25232F2DF500A59451 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A3C7CE05232F220E00A59451 /* Base */,
+				A3C7CE26232F2DF500A59451 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A3C7CE0C232F221000A59451 /* LaunchScreen.storyboard */ = {
+		A3C7CE2D232F2DF600A59451 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A3C7CE0D232F221000A59451 /* Base */,
+				A3C7CE2E232F2DF600A59451 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -235,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A3C7CE10232F221000A59451 /* Debug */ = {
+		A3C7CE31232F2DF600A59451 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -296,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		A3C7CE11232F221000A59451 /* Release */ = {
+		A3C7CE32232F2DF600A59451 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -351,9 +282,8 @@
 			};
 			name = Release;
 		};
-		A3C7CE13232F221000A59451 /* Debug */ = {
+		A3C7CE34232F2DF600A59451 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DB3CE0609873DE27E3F2281 /* Pods-Calorie Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -369,9 +299,8 @@
 			};
 			name = Debug;
 		};
-		A3C7CE14232F221000A59451 /* Release */ = {
+		A3C7CE35232F2DF600A59451 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D882B610B51EFEFB792175CA /* Pods-Calorie Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,20 +319,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A3C7CDF8232F220E00A59451 /* Build configuration list for PBXProject "Calorie Tracker" */ = {
+		A3C7CE19232F2DF500A59451 /* Build configuration list for PBXProject "Calorie Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A3C7CE10232F221000A59451 /* Debug */,
-				A3C7CE11232F221000A59451 /* Release */,
+				A3C7CE31232F2DF600A59451 /* Debug */,
+				A3C7CE32232F2DF600A59451 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3C7CE12232F221000A59451 /* Build configuration list for PBXNativeTarget "Calorie Tracker" */ = {
+		A3C7CE33232F2DF600A59451 /* Build configuration list for PBXNativeTarget "Calorie Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A3C7CE13232F221000A59451 /* Debug */,
-				A3C7CE14232F221000A59451 /* Release */,
+				A3C7CE34232F2DF600A59451 /* Debug */,
+				A3C7CE35232F2DF600A59451 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -411,17 +340,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A3C7CE07232F220E00A59451 /* Calorie_Tracker.xcdatamodeld */ = {
+		A3C7CE28232F2DF500A59451 /* Calorie_Tracker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A3C7CE08232F220E00A59451 /* Calorie_Tracker.xcdatamodel */,
+				A3C7CE29232F2DF500A59451 /* Calorie_Tracker.xcdatamodel */,
 			);
-			currentVersion = A3C7CE08232F220E00A59451 /* Calorie_Tracker.xcdatamodel */;
+			currentVersion = A3C7CE29232F2DF500A59451 /* Calorie_Tracker.xcdatamodel */;
 			path = Calorie_Tracker.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = A3C7CDF5232F220E00A59451 /* Project object */;
+	rootObject = A3C7CE16232F2DF500A59451 /* Project object */;
 }
